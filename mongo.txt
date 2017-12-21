@@ -1,0 +1,44 @@
+db.contacts.insert({name:"h3"})
+db.contacts.insert({name:"h4"})
+
+db.contacts.insert({
+name:"Amanda",
+status:"Updated",
+age:20})
+
+for (var i = 1; i <= 1000; i++) {
+    db.testData.insert({x:i , name:"MACLEAN"})
+db.contacts.insert( { name: "Amanda", status:
+"Updated" } )
+db.contacts.insert( { name: "tom", status: "Updated" } )
+db.contacts.insert( { name: "jack", status: "Updated" } )
+db.contacts.insert( { name: "jack1", status:    "Updated" } )
+db.contacts.insert( { name: "steph", status:    "Updated" } )
+
+for (var i = 1; i <= 1000; i++) {
+	db.contacts.insert( { name: "Amanda", status:"Updated" } )}
+
+db.contacts.find().count()
+
+mongod.exe --dbpath "d:\MongoDB\data" --bind_ip 127.0.0.1,192.168.10.145 -auth
+mongod.exe --dbpath "d:\MongoDB\data" --bind_ip_all
+
+mongod.exe --dbpath "d:\MongoDB\data" --logpath "d:\MongoDB\logs\mongo.log" --logappend --directoryperdb --serviceName MongoDB --install 
+
+mongod.exe --dbpath d:\MongoDB\data --logpath d:\MongoDB\logs\mongo.log --logappend --directoryperdb --serviceName MongoDB -install 
+
+mongod.exe --dbpath d:\MongoDB\data --logpath d:\MongoDB\logs\mongo.log --logappend  -install 
+
+mongod.exe --dbpath d:\MongoDB\data --logpath d:\MongoDB\logs\mongo.log --logappend --serviceName MongoDB --serviceDisplayName MongoDB -install 
+mongod.exe --config d:\MongoDB\mongo.config --serviceName MongoDB --serviceDisplayName MongoDB -install
+mongod --config d:\MongoDB\mongo.config 
+mongod --config /d/MongoDB/mongo.config
+
+db.createUser(
+{"user" : "myUser",
+"pwd": "myPwd",
+"roles" : [{ role: "clusterAdmin", db:"admin"}, 
+           { role: "readAnyDatabase", db:"admin" }, 
+           "readWrite"]
+}, 
+{ w: "majority" , wtimeout: 5000 })
