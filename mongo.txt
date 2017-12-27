@@ -20,7 +20,8 @@ for (var i = 1; i <= 1000; i++) {
 
 db.contacts.find().count()
 
-mongod.exe --dbpath "d:\MongoDB\data" --bind_ip 127.0.0.1,192.168.10.145 -auth
+mongod.exe --dbpath "d:\MongoDB\data" --bind_ip 127.0.0.1,192.168.10.145 -auth  -journal
+mongod.exe --dbpath "d:\MongoDB\data" --bind_ip 127.0.0.1,192.168.10.145 -auth  -journal -fork --logpath "d:\MongoDB\logs\mongo.log" --logappend
 mongod.exe --dbpath "d:\MongoDB\data" --bind_ip_all
 
 mongod.exe --dbpath "d:\MongoDB\data" --logpath "d:\MongoDB\logs\mongo.log" --logappend --directoryperdb --serviceName MongoDB --install 
